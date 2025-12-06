@@ -1,0 +1,56 @@
+:root {
+    --bs-primary: #0d6efd; 
+    --bs-secondary: #6c757d;
+    --bs-info: #0dcaf0;
+    --bs-success: #198754;
+    --bs-dark: #212529;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1f084a, #5a189a); 
+    color: white;
+    padding: 100px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.song-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.song-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.song-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.song-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.song-card .card-body {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.badge-genre {
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 0.5em 0.8em;
+    border-radius: 50px;
+}
+
+.badge-duration {
+    background-color: var(--bs-secondary);
+    color: white;
+    padding: 0.5em 0.8em;
+    border-radius: 50px;
+}
